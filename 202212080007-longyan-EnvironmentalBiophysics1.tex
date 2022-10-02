@@ -1,0 +1,25 @@
+\documentclass[12pt]{article}
+
+\usepackage{amsmath}
+
+\usepackage{graphicx}
+
+\usepackage{hyperref}
+
+\usepackage[utf8]{inputenc}
+\title{The Homework1 of Environmental Biophysics}
+\author{LongYan}
+\date{2022-9-29}
+\begin{document}
+\maketitle
+\begin{enumerate}
+    \Large
+    \item[Question:] Please derive the calculation fromula of D with soil temperature observation at two depths.\\
+    $D=\frac{z_{1}-z_{2}}{\ln{(T_{z2}-T_{ave})}-\ln{(T_{z1}-T_{ave})}}$
+    \item[Answer:] $T = T_{ave} \pm A(0)exp(-z/D)$\\
+    $\Rightarrow \frac{-z}{D} = \ln\frac{T-T_{ave}}{\pm A(0)}$\\ 
+    $\Rightarrow \frac{-z_{1}}{D} - \frac{-z_{2}}{D} = \ln\frac{T_{1}-T_{ave}}{\pm A(0)} - \ln\frac{T_{2}-T_{ave}}{\pm A(0)}$\\
+    $\Rightarrow \frac{-z_{1}+z_{2}}{D} = \ln\frac{T-T_{ave}}{T_{2}-T_{ave}}$\\
+    $\Rightarrow D=\frac{z_{1}-z_{2}}{\ln{(T_{z2}-T_{ave})}-\ln{(T_{z1}-T_{ave})}}$
+\end{enumerate}
+\end{document}
