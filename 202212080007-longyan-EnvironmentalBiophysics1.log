@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022) (preloaded format=xelatex 2022.9.18)  2 OCT 2022 21:24
+This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022) (preloaded format=xelatex 2022.9.18)  3 OCT 2022 14:32
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -85,20 +85,11 @@ LaTeX Info: Redefining \Relbar on input line 971.
 \mathdisplay@stack=\toks20
 LaTeX Info: Redefining \[ on input line 2953.
 LaTeX Info: Redefining \] on input line 2954.
-) (d:/TexLive/texlive/2022/texmf-dist/tex/latex/enumitem/enumitem.sty
-Package: enumitem 2019/06/20 v3.9 Customized lists
-\enitkv@toks@=\toks21
-\labelindent=\skip52
-\enit@outerparindent=\dimen148
-\enit@toks=\toks22
-\enit@inbox=\box53
-\enit@count@id=\count267
-\enitdp@description=\count268
 ) (d:/TexLive/texlive/2022/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
  (d:/TexLive/texlive/2022/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
-\KV@toks@=\toks23
+\KV@toks@=\toks21
 ) (d:/TexLive/texlive/2022/texmf-dist/tex/latex/graphics/graphics.sty
 Package: graphics 2022/03/10 v1.4e Standard LaTeX Graphics (DPC,SPQR)
  (d:/TexLive/texlive/2022/texmf-dist/tex/latex/graphics/trig.sty
@@ -110,8 +101,16 @@ Package graphics Info: Driver file: xetex.def on input line 107.
  (d:/TexLive/texlive/2022/texmf-dist/tex/latex/graphics-def/xetex.def
 File: xetex.def 2022/04/16 v5.0m Graphics/color driver for xetex
 ))
-\Gin@req@height=\dimen149
-\Gin@req@width=\dimen150
+\Gin@req@height=\dimen148
+\Gin@req@width=\dimen149
+) (d:/TexLive/texlive/2022/texmf-dist/tex/latex/enumitem/enumitem.sty
+Package: enumitem 2019/06/20 v3.9 Customized lists
+\labelindent=\skip52
+\enit@outerparindent=\dimen150
+\enit@toks=\toks22
+\enit@inbox=\box53
+\enit@count@id=\count267
+\enitdp@description=\count268
 ) (d:/TexLive/texlive/2022/texmf-dist/tex/latex/hyperref/hyperref.sty
 Package: hyperref 2022-06-20 v7.00s Hypertext links for LaTeX
  (d:/TexLive/texlive/2022/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
@@ -224,8 +223,8 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 28
 \Hy@SectionHShift=\skip53
 ) (d:/TexLive/texlive/2022/texmf-dist/tex/latex/base/inputenc.sty
 Package: inputenc 2021/02/14 v1.3d Input encoding file
-\inpenc@prehook=\toks24
-\inpenc@posthook=\toks25
+\inpenc@prehook=\toks23
+\inpenc@posthook=\toks24
 
 
 Package inputenc Warning: inputenc package ignored with utf8 based engines.
@@ -240,37 +239,37 @@ File: l3backend-xetex.def 2022-08-30 L3 backend support: XeTeX
 ) (./202212080007-longyan-EnvironmentalBiophysics1.aux)
 \openout1 = `202212080007-longyan-EnvironmentalBiophysics1.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 15.
-LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 15.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 17.
+LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 17.
  (d:/TexLive/texlive/2022/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-Package hyperref Info: Link coloring OFF on input line 15.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+Package hyperref Info: Link coloring OFF on input line 17.
  (./202212080007-longyan-EnvironmentalBiophysics1.out) (./202212080007-longyan-EnvironmentalBiophysics1.out)
 \@outlinefile=\write3
 \openout3 = `202212080007-longyan-EnvironmentalBiophysics1.out'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 19--26
+Underfull \hbox (badness 10000) in paragraph at lines 21--28
 
  []
 
@@ -283,7 +282,7 @@ Package rerunfilecheck Info: File `202212080007-longyan-EnvironmentalBiophysics1
 Here is how much of TeX's memory you used:
  8957 strings out of 475748
  143833 string characters out of 5799183
- 483666 words of memory out of 5000000
+ 481666 words of memory out of 5000000
  30048 multiletter control sequences out of 15000+600000
  473507 words of font info for 46 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191

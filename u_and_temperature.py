@@ -34,4 +34,5 @@ plt.legend(loc='upper right')
 plt.savefig("1b.png")
 plt.close()
 
-print(data['H'].mean())
+print(data['H'])
+data.to_excel('final.xlsx', index=False)
