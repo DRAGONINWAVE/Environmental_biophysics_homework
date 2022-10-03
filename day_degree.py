@@ -11,7 +11,7 @@ print(df['Tx'][1])
 i = 0
 for day in tqdm(range(120, 220)):
     if (df['Tx'][i] + df['Tn'][i])/2 >= baseT:
-        a = a + (df['Tx'][i] + df['Tn'][i])/2
+        a = a + ((df['Tx'][i] + df['Tn'][i])/2-3)
     if a >= 900:
         break
     i = i + 1
@@ -22,7 +22,7 @@ k = 0
 print(df['Tx'][i1])
 for day in tqdm(range(151, 220)):
     if (df['Tx'][i1] + df['Tn'][i1])/2 >= baseT:
-        b = b + (df['Tx'][i1] + df['Tn'][i1])/2
+        b = b + ((df['Tx'][i1] + df['Tn'][i1])/2-3)
     if b >= finalT:
         # print(k, day)
         break
