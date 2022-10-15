@@ -1,5 +1,5 @@
-import pandas as pd
 import numpy as np
+import pandas as pd
 from tqdm import tqdm
 
 df = pd.read_excel(r'C:\\Users\Administrator\Desktop\day_degree.xlsx')
