@@ -7,26 +7,11 @@ print(data)
 
 Ta1 = []
 A1 = []
-print(data['doy'].values)
+print(data['doy'].values[1:49])
+# print(data.loc[['doy', 'Ta']])
 D = pd.DataFrame()
-for i in data.doy.values[1:49]:
-    k = 0
-    B = pd.DataFrame()
-    for j in range(366):
-        l = 0
-        l = i + j
-        if l in data['doy'].values:
-            # print(l)s
-            mask = data['doy'] == l
-            pos = np.flatnonzero(mask)
-            C = data.iloc[pos]
-            # print(C)
-            B = pd.concat([B, C])
-    k = k + 1
-    B = B.groupby(['doy']).mean()
-    D = pd.concat([D, B])
-print(D)
-
-# x = data.doy.values[1:1000]
-# pos = np.flatnonzero(mask)
-# print(data.iloc[pos])
+k = 0
+m = np.arange(0.5, 24.5, 0.5)
+print(len(m))
+print(data.groupby(['doy']).mean())
+data.groupby(['doy']).mean().to_excel('half_hour.xlsx')

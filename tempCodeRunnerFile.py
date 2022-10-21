@@ -1,1 +1,1 @@
-    # print(k)
+print(data.loc[['doy', 'Ta']])
