@@ -7,10 +7,11 @@ print(dim(data))
 print(data[1:2, 1:2])
 A <- seq(as.Date("2012/1/1"), by = "day", length = 366)
 # print(length(data["Ta"]))
+# print(A)
 Ta1 <- c()
 RH1 <- c()
 P1 <- c()
-DAY1 <- c()
+DAY <- c()
 n <- 0
 for (i in seq(1, 366, 1))
 {
@@ -36,14 +37,16 @@ for (i in seq(1, 366, 1))
         Ta1[n] <- Ta2 / k
         RH1[n] <- RH2 / k
         P1[n] <- P2 / k
-        DAY1[n] <- A[i]
+        # print(A[i])
+        DAY[n] <- A[i]
         # print(n)
     }
     # print(length(Ta1))
+    print(i)
 }
 
 # print(Ta1)
-DAY <- unlist(DAY1)
+DAY <- as.Date(DAY, origin = "1970-1-1")
 print(DAY)
 Ta <- unlist(Ta1)
 print(Ta)

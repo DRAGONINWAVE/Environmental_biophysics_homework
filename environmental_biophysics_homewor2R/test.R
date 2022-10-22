@@ -6,7 +6,7 @@
 # print(X)
 print(Sys.Date())
 A <- seq(as.Date("2012/1/1"), by = "day", length = 365)
-print(A[40])
+print(A)
 # mydf <- data.frame(
 #     date = seq(as.Date("2012/1/1"), by = "day", length = 365),
 #     a = runif(365), b = rnorm(365)
