@@ -1,7 +1,6 @@
-DAY <- DAY
-# Ta <- Ta1
-# RH <- RH1
-# P <- P1
-# table <- data.frame(DAY, Ta, RH, P)
-# print(table)
-# write_xlsx(table, "DAY.xlsx")
+a <- c(171, 175, 159, 155, 152, 160)
+
+# x2 <- c(57, 64, 41, 38, 35, 40)
+
+# X <- data.frame(x1, x2)
+# print(X)
