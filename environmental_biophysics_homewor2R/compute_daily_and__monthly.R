@@ -5,43 +5,49 @@ library(writexl)
 data <- read_excel("D:\\Environmental_biophysics_homework\\删去缺值和第一行值.xlsx", 1)
 print(dim(data))
 print(data[1:2, 1:2])
-print(16730)
-Ta1 <- list()
-RH1 <- list()
-P1 <- list()
-DAY <- list()
+# print(length(data["Ta"]))
+Ta1 <- c()
+RH1 <- c()
+P1 <- c()
+DAY1 <- c()
+n <- 0
 for (i in seq(1, 366, 1))
 {
-    Ta <- 0
-    RH <- 0
-    P <- 0
+    Ta2 <- 0
+    RH2 <- 0
+    P2 <- 0
     k <- 0
     for (j in seq(1, 16730)) {
         if (i < data[j, 1] && data[j, 1] <= i + 1) {
-            Ta <- Ta + data[j, 2]
-            RH <- RH + data[j, 3]
-            P <- P + data[j, 4]
+            Ta2 <- Ta2 + data[j, 2]
+            RH2 <- RH2 + data[j, 3]
+            P2 <- P2 + data[j, 4]
             k <- k + 1
         }
     }
     # print(i)
     if (k != 0) {
-        Ta1 <- append(Ta1, Ta / k)
-        RH1 <- append(RH1, RH / k)
-        P1 <- append(P1, P / k)
-        DAY <- append(DAY, i)
-        # Ta1[i] <- (Ta / k)
-        # RH1[i] <- (RH / k)
-        # P1[i] <- (P / k)
-        # DAY[i] <- i
+        # Ta1 <- append(Ta1, Ta2 / k)
+        # RH1 <- append(RH1, RH2 / k)
+        # P1 <- append(P1, P2 / k)
+        # DAY <- append(DAY, i)
+        n <- n + 1
+        Ta1[n] <- Ta2 / k
+        RH1[n] <- RH2 / k
+        P1[n] <- P2 / k
+        DAY1[n] <- i
+        # print(n)
     }
-    print(length(Ta1))
+    # print(length(Ta1))
 }
-table <- cbind(
-    DAY = DAY,
-    Ta = Ta1,
-    RH = RH1,
-    P = P1
-)
-print(length(DAY))
+
+# print(Ta1)
+DAY <- unlist(DAY1)
+print(DAY)
+Ta <- unlist(Ta1)
+print(Ta)
+RH <- unlist(RH1)
+P <- unlist(P1)
+table <- data.frame(DAY, Ta, RH, P)
+print(table)
 write_xlsx(table, "DAY.xlsx")

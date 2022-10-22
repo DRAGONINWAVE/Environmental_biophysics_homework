@@ -1,11 +1,7 @@
-for (i in seq(1, 366, 1))
-# {
-#     Ta <- 0
-#     RH <- 0
-#     P <- 0
-#     k <- 0
-#     for (j in seq(1, len(data) - 1))
-#     {
-
-#     }
-# }
+DAY <- DAY
+# Ta <- Ta1
+# RH <- RH1
+# P <- P1
+# table <- data.frame(DAY, Ta, RH, P)
+# print(table)
+# write_xlsx(table, "DAY.xlsx")
