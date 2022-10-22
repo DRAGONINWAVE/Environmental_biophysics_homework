@@ -25,7 +25,6 @@ data <- data[-1, ]
 print(data[1:2, ])
 data[data == "NaN"] <- NA
 newdata <- na.omit(data) # nolint
-# newdata <- as.numeric(unlist(newdata))
 print(dim(newdata))
 by_doy <- newdata %>% group_by(doy)
 print(by_doy)
