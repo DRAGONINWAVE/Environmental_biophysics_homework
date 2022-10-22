@@ -12,23 +12,24 @@ k <- 2
 print(v)
 # print(data[c("doy", "Ta")])
 print(data[1:2, 1])
-for (i in seq(366))
-{
-    for (j in v)
-    {
-        data[k, 1] <- j
-        k <- k + 1
-    }
-}
-print(k)
+# for (i in seq(366))
+# {
+#     for (j in v)
+#     {
+#         data[k, 1] <- j
+#         k <- k + 1
+#     }
+# }
+# print(k)
 data <- data[-1, ]
-print(data[1:2, ])
+# print(data[1:2, ])
 data[data == "NaN"] <- NA
 newdata <- na.omit(data) # nolint
-print(dim(newdata))
-by_doy <- newdata %>% group_by(doy)
-print(by_doy)
-daily48 <- by_doy %>% summarize(Ta = mean(Ta), RH = mean(RH), P = mean(P))
-print(daily48)
-# print(data %>% group_by(doy) %>% summarize(Ta = mean(Ta)))
-write_xlsx(daily48, "每日48时刻均值.xlsx")
+write_xlsx(newdata, "删去缺值和第一行值.xlsx")
+# print(dim(newdata))
+# by_doy <- newdata %>% group_by(doy)
+# print(by_doy)
+# daily48 <- by_doy %>% summarize(Ta = mean(Ta), RH = mean(RH), P = mean(P))
+# print(daily48)
+# # print(data %>% group_by(doy) %>% summarize(Ta = mean(Ta)))
+# write_xlsx(daily48, "每日48时刻均值.xlsx")
