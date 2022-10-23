@@ -2,6 +2,7 @@ library(readxl)
 library(writexl)
 library(magrittr)
 library(dplyr)
+library(beginr)
 
 data0 <- read_excel("D:\\Environmental_biophysics_homework\\DAY.xlsx")
 print(data0)
@@ -20,3 +21,19 @@ Cv <- ea / data0["P"] * 1000000
 data0["Cv"] <- round(Cv, digits = 0)
 print(data0)
 write_xlsx(data0, "D:\\Environmental_biophysics_homework\\environmental_biophysics_homewor2R\\ALL_BY_Date.xlsx")
+month_all <- data0 %>%
+    mutate(month = format(DAY, "%Y-%m")) %>%
+    group_by(month) %>%
+    summarize(
+        mean_bymon_Ta = mean(Ta),
+        mean_bymon_RH = mean(RH),
+        mean_bymon_P = mean(P),
+        mean_bymon_es = mean(es),
+        mean_bymon_ea = mean(ea),
+        mean_bymon_VPD = mean(VPD),
+        mean_bymon_qa = mean(qa),
+        mean_bymon_rou_v = mean(rou_v),
+        mean_bymon_Cv = round(mean(Cv), digits = 0)
+    )
+write_xlsx(month_all, "D:\\Environmental_biophysics_homework\\environmental_biophysics_homewor2R\\month_all.xlsx")
+print(month_all)
