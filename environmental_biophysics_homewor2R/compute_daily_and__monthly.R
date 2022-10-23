@@ -6,10 +6,12 @@ data <- read_excel("D:\\Environmental_biophysics_homework\\删去缺值和第一
 print(data[1:2, ])
 # 创建按照标date格式的列表，为下一步做提前打算
 A <- seq(as.Date("2012/1/1"), by = "day", length = 366)
+B <- seq(1, 366)
 Ta1 <- c()
 RH1 <- c()
 P1 <- c()
 DAY <- c()
+DAY1<-c()
 n <- 0
 # n和i值不一样按照n来赋值
 for (i in seq(1, 366, 1))
@@ -32,6 +34,7 @@ for (i in seq(1, 366, 1))
         RH1[n] <- RH2 / k
         P1[n] <- P2 / k
         DAY[n] <- A[i]
+        DAY1[n] <-B[i]
     }
     print(i)
 }
@@ -46,3 +49,7 @@ table <- data.frame(DAY, Ta, RH, P)
 print(table)
 # 输出excel
 write_xlsx(table, "DAY.xlsx")
+
+DAY<-DAY1
+table <- data.frame(DAY, Ta, RH, P)
+write_xlsx(table, "DAY1.xlsx")
