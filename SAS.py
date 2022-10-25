@@ -1,0 +1,10 @@
+import pandas as pd
+disease = pd.read_fwf("D:\piles\data (1)\data\DATA\Disease.txt", sep=" ")
+print(disease.columns)
+# print(disease)
+grouth = pd.read_excel("D:\piles\data (1)\data\DATA\Growth.xlsx")
+print(grouth.columns)
+# data = disease.merge(grouth, left_on='TreeID', right_on='TreeID')
+data = pd.merge(grouth, disease, on='TreeID')
+# data = grouth.merge(disease, on='TreeID')
+print(data)
